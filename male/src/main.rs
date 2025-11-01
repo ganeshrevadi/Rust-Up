@@ -1,6 +1,8 @@
 fn main() {
     let is_male:bool = true;
-    let is_above_18:bool = true;
+    let mut is_above_18:bool = true;
+
+    is_above_18 = false;
 
     if is_male{
         println!("This person is male.");
