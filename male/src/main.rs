@@ -15,5 +15,10 @@ fn main() {
     } else {
         println!("This person is either not male or not above 18.");
     }
+    let sum = add(5, 10);
+    println!("The sum is: {}", sum);
+}
 
+fn add(a:i32, b:i32) -> i32 {
+    return a + b
 }
