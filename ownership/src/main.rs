@@ -11,7 +11,9 @@ fn main() {
     let x = 5;                      // x comes into scope
 
     makes_copy(x);                  // Because i32 implements the Copy trait,
-                                    // x does NOT move into the function,
+    
+    let a = 6;
+    test(a);// x does NOT move into the function,
                                     // so it's okay to use x afterward.
 
 } // Here, x goes out of scope, then s. However, because s's value was moved,
@@ -24,4 +26,10 @@ fn takes_ownership(some_string: String) { // some_string comes into scope
 
 fn makes_copy(some_integer: i32) { // some_integer comes into scope
     println!("{some_integer}");
-} // Here, some_integer goes out of scope. Nothing special happens.
+}// Here, some_integer goes out of scope. Nothing special happens.
+
+
+fn test(a: i32) -> i32{
+    println!("{}", a);
+    return a;
+}
