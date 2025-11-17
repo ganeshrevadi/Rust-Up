@@ -3,6 +3,11 @@
 //     println!("{}", s);
 // }
 
+// Rules of takes_ownership
+// 1. Each will always have a single owner
+// 2. If the ownwer goes out of scope the value goes out of scope
+// 3. There can be only one owner of value at a time
+
 fn main() {
     let s = String::from("hello");  // s comes into scope
 
