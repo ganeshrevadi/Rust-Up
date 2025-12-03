@@ -3,7 +3,7 @@ fn main() {
     let s2 = &mut s1;
     update_word(s2);
     println!("{}", s2);
-    println!("{}", s1);
+    println!("{}", s2);
 }
 
 fn update_word(word: &mut String) {
